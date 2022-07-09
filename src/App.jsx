@@ -36,9 +36,21 @@ function App() {
       });
   }, []);
 
-  const handleLogin = (isLog, authToken) => {
-    setLogin(isLog);
+  const handleLogin = async (isLog, authToken) => {
+    await setLogin(isLog);
     setAuthToken(authToken)
+    let config = {
+      headers: {
+        authorization: authToken,
+      }
+    }
+    await axios
+      .post(baseURL+'/list', {
+      }, config)
+      .then((response) => {
+        setNotes(response.data.data);
+      });
+    // setNotes(notes)
   }
 
   const handleLogout = async () => {

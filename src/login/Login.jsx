@@ -39,7 +39,7 @@ class Login extends React.Component{
                 email: this.state.email,
                 password: this.state.pwd,
                 name: this.state.name,
-                contact: this.state.contact
+                phone: this.state.contact
             }
           })
           .then((response) => {
