@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/Jottly-Frontend/static/css/main.56410fd2.chunk.css",
-    "main.js": "/Jottly-Frontend/static/js/main.bead097b.chunk.js",
-    "main.js.map": "/Jottly-Frontend/static/js/main.bead097b.chunk.js.map",
+    "main.js": "/Jottly-Frontend/static/js/main.b4ad59dd.chunk.js",
+    "main.js.map": "/Jottly-Frontend/static/js/main.b4ad59dd.chunk.js.map",
     "runtime-main.js": "/Jottly-Frontend/static/js/runtime-main.54dd11ac.js",
     "runtime-main.js.map": "/Jottly-Frontend/static/js/runtime-main.54dd11ac.js.map",
-    "static/js/2.70165e89.chunk.js": "/Jottly-Frontend/static/js/2.70165e89.chunk.js",
-    "static/js/2.70165e89.chunk.js.map": "/Jottly-Frontend/static/js/2.70165e89.chunk.js.map",
+    "static/js/2.ec7b06ec.chunk.js": "/Jottly-Frontend/static/js/2.ec7b06ec.chunk.js",
+    "static/js/2.ec7b06ec.chunk.js.map": "/Jottly-Frontend/static/js/2.ec7b06ec.chunk.js.map",
     "index.html": "/Jottly-Frontend/index.html",
     "static/css/main.56410fd2.chunk.css.map": "/Jottly-Frontend/static/css/main.56410fd2.chunk.css.map",
-    "static/js/2.70165e89.chunk.js.LICENSE.txt": "/Jottly-Frontend/static/js/2.70165e89.chunk.js.LICENSE.txt"
+    "static/js/2.ec7b06ec.chunk.js.LICENSE.txt": "/Jottly-Frontend/static/js/2.ec7b06ec.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.54dd11ac.js",
-    "static/js/2.70165e89.chunk.js",
+    "static/js/2.ec7b06ec.chunk.js",
     "static/css/main.56410fd2.chunk.css",
-    "static/js/main.bead097b.chunk.js"
+    "static/js/main.b4ad59dd.chunk.js"
   ]
 }
