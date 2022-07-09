@@ -1,25 +1,6 @@
-.div-login{
-    width:200px;
-    height:300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 0 auto;
-    border: 1px solid #dbdbdb;
-    border-radius: 5px;
-    padding: 20px;
-    margin-top: 10vh;
-    background-color: white;
-} 
-
-.div-login-logo{
-    height: 50px;
-    width: 50px;
-    align-self: center;
-}
 
 input{
-    width: 95%;
+    width: 100%;
     border: 1px solid #dbdbdb;
     padding: 5px;
     margin: 2px 0;
@@ -39,4 +20,40 @@ button{
     border: none;
     color: white;
     border-radius: 5px;
+}
+
+.auth {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.login {
+width: 50%;
+margin: 10px;
+}
+
+.register {
+    width: 50%;
+    margin: 10px;
+}
+
+@media (max-width: 550px) {
+    .auth {
+        width: 80%;
+        height: 100%;
+        margin: auto;
+    }
+    
+    .login {
+    width: 100%;
+    margin: 10px;
+    }
+    
+    .register {
+        width: 100%;
+        margin: 10px;
+    }
+    
 }
