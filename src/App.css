@@ -1,0 +1,299 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+* {
+  box-sizing: border-box;
+}
+
+/* GLOBAL STYLES */
+
+body,
+.App {
+  /* display: flex; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+.App-Home {
+  width: 100%;
+  height: 100%;
+}
+.app-sidebar-button:hover {
+  color: #04c;
+} 
+
+.app-sidebar-button {
+  background: #08c;
+  border: 0;
+  margin: 6px;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  color: #fff;
+  width: 15vw;
+}
+
+/* SIDEBAR STYLES */
+
+.app-sidebar {
+  width: 25%;
+  height: 100%;
+  border-right: 1px solid #ddd;
+  float: left;
+}
+
+.app-sidebar-header {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  margin: auto;
+}
+.app-sidebar-header h1 {
+  margin: 10px;
+}
+
+.app-sidebar-header button {
+  margin: 10px;
+}
+
+
+.app-sidebar-notes {
+  height: calc(100vh - 78px);
+  overflow-y: scroll;
+}
+.app-sidebar-note {
+  padding: 25px;
+  cursor: pointer;
+}
+.sidebar-note-title {
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar-note-title button {
+  flex-grow: 1;
+  width: 70%;
+  /* overflow: hidden; */
+}
+.sidebar-note-title strong {
+  flex-grow: 1;
+  width: 30%;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+.app-sidebar-note button {
+  flex-grow: 1;
+  width: 50%;
+  color: crimson;
+  background: #fff;
+  border: 1px solid crimson;
+}
+.app-sidebar-note button:hover {
+  color: #fff;
+  background: crimson;
+  cursor: pointer;
+
+}
+.app-sidebar-note p {
+  margin: 10px 0;
+  overflow: hidden;
+  color: rgb(90, 84, 84);
+}
+.app-sidebar-note small {
+  display: block;
+  color: #999;
+}
+
+.app-sidebar-note:hover {
+  background: rgb(233, 232, 232);
+}
+.app-sidebar-note.active,
+.app-sidebar-note.active small {
+  background: #08c;
+  color: white;
+}
+.app-sidebar-note.active p {
+  background: #08c;
+  color: white;
+}
+
+
+/* NOTE EDITOR/PREVIEW (MAIN) STYLES */
+
+.app-main {
+  width: 75%;
+  height: 100vh;
+  float: right;
+}
+.app-main-note-edit,
+.app-main-note-preview {
+  height: 50vh;
+}
+
+.no-active-note {
+  width: 70%;
+  height: 100vh;
+  line-height: 100vh;
+  text-align: center;
+  font-size: 2rem;
+  color: #999;
+}
+
+/* Editing */
+.app-main-note-edit {
+  padding: 25px;
+}
+
+.app-main-note-edit input,
+textarea {
+  display: block;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  width: 100%;
+  height: calc(50vh - 130px);
+  padding: 10px;
+  resize: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+.app-main-note-edit input {
+  height: 50px;
+  font-size: 2rem;
+}
+
+/* Preview */
+.app-main-note-preview {
+  border-top: 1px solid #ddd;
+  overflow-y: scroll;
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.preview-title {
+  padding: 25px 25px 0 25px;
+  margin: 0;
+}
+
+.markdown-preview {
+  padding: 0 25px 25px 25px;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.app-main-note-header {
+  display: flex;
+  
+}
+
+.app-main-note-header div{
+  width: 5%;
+  height: 50px;
+  position: relative;
+}
+
+.checkmark__circle {
+  top: 500px;
+  position: absolute;
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #7ac142;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  margin: 10% auto;
+  box-shadow: inset 0px 0px 0px #7ac142;
+  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes scale {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #7ac142;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .app-sidebar {
+    width: 40%;
+    height: 100%;
+    border-right: 1px solid #ddd;
+    float: left;
+  }
+
+  .app-main {
+    width: 60%;
+    height: 100vh;
+    float: right;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .app-sidebar {
+    width: 45%;
+    height: 100%;
+    border-right: 1px solid #ddd;
+    float: left;
+  }
+
+  .app-main {
+    width: 55%;
+    height: 100vh;
+    float: right;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .app-sidebar {
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid #ddd;
+  }
+
+  .app-main {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .App {
+    /* display: flex; */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    font-size: 16px;
+  }
+}
