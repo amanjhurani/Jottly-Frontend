@@ -18,6 +18,7 @@ function App() {
   const [isLog, setLogin] = useState(authToken ? true : false);
   const [activeNote, setActiveNote] = useState(false);
   const baseURL = 'https://jottly-app.herokuapp.com/api/v1/note';
+  const baseUserURL = 'https://jottly-app.herokuapp.com/api/v1/user';
   const [isUpdated, setIsUpdated] = useState(false);
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -38,6 +39,21 @@ function App() {
   const handleLogin = (isLog, authToken) => {
     setLogin(isLog);
     setAuthToken(authToken)
+  }
+
+  const handleLogout = async () => {
+    setLogin(false);
+    let config = {
+      headers: {
+        authorization: authToken,
+      }
+    }
+    await axios
+      .post(baseUserURL+'/logout', {
+      }, config)
+      .then((response) => {
+        console.log(response)
+      });
   }
 
   // const getNotes = async () => {
@@ -148,6 +164,7 @@ function App() {
               onDeleteNote={onDeleteNote}
               activeNote={activeNote}
               setActiveNote={setActiveNote}
+              isLogout={handleLogout}
             />
             <Main activeNote={getActiveNote()} onUpdateNote={onUpdateNote} isUpdated={isUpdated} setUpdateStatus={setIsUpdated} />
           </div>
