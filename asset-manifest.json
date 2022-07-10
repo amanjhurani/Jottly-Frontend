@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Jottly-Frontend/static/css/main.4ac7a877.chunk.css",
-    "main.js": "/Jottly-Frontend/static/js/main.96b2e062.chunk.js",
-    "main.js.map": "/Jottly-Frontend/static/js/main.96b2e062.chunk.js.map",
+    "main.css": "/Jottly-Frontend/static/css/main.6a139fcc.chunk.css",
+    "main.js": "/Jottly-Frontend/static/js/main.60021fbf.chunk.js",
+    "main.js.map": "/Jottly-Frontend/static/js/main.60021fbf.chunk.js.map",
     "runtime-main.js": "/Jottly-Frontend/static/js/runtime-main.54dd11ac.js",
     "runtime-main.js.map": "/Jottly-Frontend/static/js/runtime-main.54dd11ac.js.map",
     "static/css/2.504c88ac.chunk.css": "/Jottly-Frontend/static/css/2.504c88ac.chunk.css",
@@ -10,14 +10,14 @@
     "static/js/2.a62a418a.chunk.js.map": "/Jottly-Frontend/static/js/2.a62a418a.chunk.js.map",
     "index.html": "/Jottly-Frontend/index.html",
     "static/css/2.504c88ac.chunk.css.map": "/Jottly-Frontend/static/css/2.504c88ac.chunk.css.map",
-    "static/css/main.4ac7a877.chunk.css.map": "/Jottly-Frontend/static/css/main.4ac7a877.chunk.css.map",
+    "static/css/main.6a139fcc.chunk.css.map": "/Jottly-Frontend/static/css/main.6a139fcc.chunk.css.map",
     "static/js/2.a62a418a.chunk.js.LICENSE.txt": "/Jottly-Frontend/static/js/2.a62a418a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.54dd11ac.js",
     "static/css/2.504c88ac.chunk.css",
     "static/js/2.a62a418a.chunk.js",
-    "static/css/main.4ac7a877.chunk.css",
-    "static/js/main.96b2e062.chunk.js"
+    "static/css/main.6a139fcc.chunk.css",
+    "static/js/main.60021fbf.chunk.js"
   ]
 }
