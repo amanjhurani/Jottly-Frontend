@@ -304,9 +304,6 @@ textarea {
   .app-sidebar-note p {
   display: none;
   }
-  .app-sidebar-note small {
-  display: none;
-  }
 
   .App {
     /* display: flex; */
