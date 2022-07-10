@@ -292,10 +292,12 @@ textarea {
   .app-sidebar-notes {
     height: 80%;
     overflow-y: scroll;
-    background: rgb(203, 226, 238);
+    background: rgb(232, 237, 243);
     
   }
-  
+  .app-sidebar-note {
+    border-bottom: 1px solid gainsboro;
+  }
 
 
   .app-sidebar-note p {

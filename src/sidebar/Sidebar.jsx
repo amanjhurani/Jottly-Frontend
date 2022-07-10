@@ -16,7 +16,7 @@ const Sidebar = ({
       <div className="app-sidebar-header">
         <h1>Notes</h1>
         <button onClick={onAddNote}>Add</button>
-        <button onClick={onLogout}>Logout</button>
+        <button onClick={onLogout}>Exit</button>
       </div>
       <div className="app-sidebar-notes">
         {sortedNotes.map(({ _id, title, body, updatedAt }, i) => (

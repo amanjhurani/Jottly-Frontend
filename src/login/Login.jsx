@@ -2,7 +2,7 @@ import React from 'react';
 import './Login.css';
 import axios from "axios";
 
-const baseURL = 'https://jottly-app.herokuapp.com/api/v1/user'
+const baseURL = 'http://localhost:3111/api/v1/user'
 
 class Login extends React.Component{
     state={
@@ -28,7 +28,8 @@ class Login extends React.Component{
                 user: response.data.user
             });
             localStorage.setItem("token", this.state.token);
-            console.log(response.data.token, response.data.user)
+          }).catch((response) => {
+            alert(response.response.data.msg)
           });
       }
 
@@ -48,7 +49,8 @@ class Login extends React.Component{
                 user: response.data.user
             });
             localStorage.setItem("token", this.state.token);
-            console.log(response.data.token, response.data.user)
+          }).catch((response) => {
+            alert(response.response.data.msg)
           });
       }
 

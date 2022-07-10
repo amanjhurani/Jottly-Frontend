@@ -17,8 +17,8 @@ function App() {
   const [authToken, setAuthToken] = useState(localStorage.token ? localStorage.token : null);
   const [isLog, setLogin] = useState(authToken ? true : false);
   const [activeNote, setActiveNote] = useState(false);
-  const baseURL = 'https://jottly-app.herokuapp.com/api/v1/note';
-  const baseUserURL = 'https://jottly-app.herokuapp.com/api/v1/user';
+  const baseURL = 'http://localhost:3111/api/v1/note';
+  const baseUserURL = 'http://localhost:3111/api/v1/user';
   const [isUpdated, setIsUpdated] = useState(false);
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -33,6 +33,8 @@ function App() {
       }, config)
       .then((response) => {
         setNotes(response.data.data);
+      }).catch((response) => {
+        alert(response.response.data.msg)
       });
   }, []);
 
@@ -49,6 +51,8 @@ function App() {
       }, config)
       .then((response) => {
         setNotes(response.data.data);
+      }).catch((response) => {
+        alert(response.response.data.msg)
       });
     // setNotes(notes)
   }
@@ -64,7 +68,8 @@ function App() {
       .post(baseUserURL+'/logout', {
       }, config)
       .then((response) => {
-        console.log(response)
+      }).catch((response) => {
+        alert(response.response.data.msg)
       });
   }
 
@@ -94,7 +99,8 @@ function App() {
       payload: newNote
     }, config)
     .then((response) => {
-      console.log(response);
+    }).catch((response) => {
+      alert(response.response.data.msg)
     });
     // setActiveNote(newNote._id);
     
@@ -115,7 +121,8 @@ function App() {
       payload: deleteNote
     }, config)
     .then((response) => {
-      console.log(response);
+    }).catch((response) => {
+      alert(response.response.data.msg)
     });
 
   };
@@ -153,6 +160,8 @@ function App() {
       } else {
         setIsUpdated(false)
       }
+    }).catch((response) => {
+      alert(response.response.data.msg)
     });
 
 
