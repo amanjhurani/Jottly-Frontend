@@ -2,7 +2,7 @@ import React from 'react';
 import './Login.css';
 import axios from "axios";
 
-const baseURL = 'http://localhost:3111/api/v1/user'
+const baseURL = 'https://jottly-app.herokuapp.com/api/v1/user'
 
 class Login extends React.Component{
     state={

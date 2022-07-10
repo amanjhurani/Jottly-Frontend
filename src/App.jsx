@@ -17,8 +17,8 @@ function App() {
   const [authToken, setAuthToken] = useState(localStorage.token ? localStorage.token : null);
   const [isLog, setLogin] = useState(authToken ? true : false);
   const [activeNote, setActiveNote] = useState(false);
-  const baseURL = 'http://localhost:3111/api/v1/note';
-  const baseUserURL = 'http://localhost:3111/api/v1/user';
+  const baseURL = 'https://jottly-app.herokuapp.com/api/v1/note';
+  const baseUserURL = 'https://jottly-app.herokuapp.com/api/v1/user';
   const [isUpdated, setIsUpdated] = useState(false);
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
