@@ -23,36 +23,37 @@ button{
 }
 
 .auth {
-    display: flex;
+    /* display: flex; */
     width: 80%;
     height: 100%;
     margin: auto;
 }
 
 .login {
-width: 50%;
+width: 100%;
 margin: 10px;
 }
 
 .register {
-    width: 50%;
+    width: 100%;
     margin: 10px;
 }
 
-@media (max-width: 550px) {
+@media (min-width: 450px) {
     .auth {
         width: 80%;
         height: 100%;
         margin: auto;
+        display: flex;
     }
     
     .login {
-    width: 100%;
+    width: 50%;
     margin: 10px;
     }
     
     .register {
-        width: 100%;
+        width: 50%;
         margin: 10px;
     }
     
