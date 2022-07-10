@@ -24,16 +24,8 @@ const Sidebar = ({
             className={`app-sidebar-note ${_id === activeNote && "active"}`}
             onClick={() => setActiveNote(_id)}
           >
-            <div className="sidebar-note-title">
+            <div className="app-sidebar-note-title">
               <strong>{title && title.substr(0, 17) + "..."}</strong>
-              {/* <p>{body && body.substr(0, 100) + "..."}</p>
-              <small className="note-meta">
-              Last Modified{" "}
-              {new Date(updatedAt).toLocaleDateString("en-GB", {
-                hour: "2-digit",
-                minute: "2-digit",
-              })}
-            </small> */}
               <button onClick={(e) => onDeleteNote(_id)}>Delete</button>
             </div>
 
