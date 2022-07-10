@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Jottly-Frontend/static/css/main.848c2e2b.chunk.css",
-    "main.js": "/Jottly-Frontend/static/js/main.03f86098.chunk.js",
-    "main.js.map": "/Jottly-Frontend/static/js/main.03f86098.chunk.js.map",
+    "main.js": "/Jottly-Frontend/static/js/main.c2e23314.chunk.js",
+    "main.js.map": "/Jottly-Frontend/static/js/main.c2e23314.chunk.js.map",
     "runtime-main.js": "/Jottly-Frontend/static/js/runtime-main.54dd11ac.js",
     "runtime-main.js.map": "/Jottly-Frontend/static/js/runtime-main.54dd11ac.js.map",
     "static/js/2.ec7b06ec.chunk.js": "/Jottly-Frontend/static/js/2.ec7b06ec.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.54dd11ac.js",
     "static/js/2.ec7b06ec.chunk.js",
     "static/css/main.848c2e2b.chunk.css",
-    "static/js/main.03f86098.chunk.js"
+    "static/js/main.c2e23314.chunk.js"
   ]
 }
