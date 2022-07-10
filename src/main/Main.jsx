@@ -46,7 +46,7 @@ const Main = ({ activeNote, onUpdateNote, isUpdated, setUpdateStatus }) => {
         </div>
         <div className="app-main-note-preview-mobile">
           <div data-color-mode="light">
-            <MDEditor id="body" maxHeight="45" placeholder="Write your note here..." height={400} value={activeNoteBody} onChange={(e) => onEditField("body", e)} preview="edit" visiableDragbar={false}/>
+            <MDEditor id="body" maxHeight="45" placeholder="Write your note here..." height={300} value={activeNoteBody} onChange={(e) => onEditField("body", e)} preview="edit" visiableDragbar={false}/>
           </div>
         </div>
       </div>
