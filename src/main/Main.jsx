@@ -1,5 +1,4 @@
-import ReactMarkdown from "react-markdown";
-import { useState } from "react";
+import MDEditor from "@uiw/react-md-editor";
 
 const Main = ({ activeNote, onUpdateNote, isUpdated, setUpdateStatus }) => {
   const onEditField = (field, value) => {
@@ -12,7 +11,7 @@ const Main = ({ activeNote, onUpdateNote, isUpdated, setUpdateStatus }) => {
     });
     setUpdateStatus(false);
   };
-  
+
 
   if (!activeNote) return <div className="no-active-note">No Active Note</div>;
   const activeNoteBody = activeNote.body === '.' ? '' : activeNote.body;
@@ -29,28 +28,26 @@ const Main = ({ activeNote, onUpdateNote, isUpdated, setUpdateStatus }) => {
             autoFocus
           // onFocus={setEditFocus(true)}
           />
-          { isUpdated ?
+          {isUpdated ?
             <div>
-            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-              <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
-              <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
-            </svg>
-          </div> : 
-          <div>
-          </div>
+              <svg className="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                <circle className="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                <path className="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+              </svg>
+            </div> :
+            <div>
+            </div>
           }
         </div>
-        <textarea
-          id="body"
-          placeholder="Write your note here..."
-          value={activeNoteBody}
-          onChange={(e) => onEditField("body", e.target.value)}
-        />
-        <div className="app-main-note-preview">
-          <h1 className="preview-title">{activeNote.title}</h1>
-          <ReactMarkdown className="markdown-preview" >
-            {activeNoteBody}
-          </ReactMarkdown>
+        <div className="app-main-note-preview-pc">
+          <div data-color-mode="light">
+            <MDEditor id="body" placeholder="Write your note here..." height={660} value={activeNoteBody} onChange={(e) => onEditField("body", e)} visibleDragbar={false}/>
+          </div>
+        </div>
+        <div className="app-main-note-preview-mobile">
+          <div data-color-mode="light">
+            <MDEditor id="body" maxHeight="45" placeholder="Write your note here..." height={400} value={activeNoteBody} onChange={(e) => onEditField("body", e)} preview="edit" visiableDragbar={false}/>
+          </div>
         </div>
       </div>
 

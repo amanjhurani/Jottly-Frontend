@@ -115,10 +115,14 @@ body,
   height: 100vh;
   float: right;
 }
-.app-main-note-edit,
-.app-main-note-preview {
-  height: 50vh;
+.app-main-note-edit{
+  height: 100%;
 }
+
+.app-main-note-preview-mobile {
+  display: none;
+}
+
 
 .no-active-note {
   width: 70%;
@@ -152,10 +156,11 @@ textarea {
 }
 
 /* Preview */
-.app-main-note-preview {
+.app-main-note-preview-pc {
   border-top: 1px solid #ddd;
   overflow-y: scroll;
   background: rgba(0, 0, 0, 0.02);
+  height: 100vh;
 }
 
 .preview-title {
@@ -316,14 +321,22 @@ textarea {
     overflow: scroll;
     font-size: 16px;
   }
-  .app-main-note-preview {
+  .app-main-note-preview-pc {
     display: none;
+  }
+
+  .app-main-note-preview-mobile {
+    display: inline;
   }
 
   .app-main-note-header input{
     height: 30px;
     font-size: 18px;
     
+  }
+
+  .w-md-editor-toolbar {
+    height: 58px !important;
   }
 
 }
