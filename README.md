@@ -1,33 +1,12 @@
-# Notes App Tutorial
+https://amanjhurani.github.io/Jottly-Frontend/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## A simple, secure and fast service for curating your notes for everyday use.
+![image](https://user-images.githubusercontent.com/47776459/178234089-12c32e76-75ea-4b51-a35a-3f72859d9802.png)
+![image](https://user-images.githubusercontent.com/47776459/178233992-dc95a611-bc9f-44a9-bbef-893cb879161e.png)
+![image](https://user-images.githubusercontent.com/47776459/178233841-8dc0c152-96da-4afe-81c6-6dcc53aa94a5.png)
+![image](https://user-images.githubusercontent.com/47776459/178233924-3b3ca14e-3a93-40cf-8e96-6dfeb025a246.png)
 
-## Tutorial
 
-This source code is from my React.js project guide. Watch it here: https://www.youtube.com/watch?v=ulOKYl5sHGk&t=1932s
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3111](http://localhost:3111) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-## Acknowledgements
-
-(c) 2021 James Grimshaw
+# Open For Frontend Contributions!
+Backend will be opensourced soon.
